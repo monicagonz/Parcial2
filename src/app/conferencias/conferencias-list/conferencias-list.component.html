@@ -1,0 +1,30 @@
+<!-- conference.component.html -->
+
+<div class="container">
+  <h2>Conferencias</h2>
+  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Comienzo</th>
+        <th>Fin</th>
+        <th>Venue</th>
+        <th>Descripcion</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of conferencias">
+        <td>{{ c.id }}</td>
+        <td>{{ c.name }}</td>
+        <td>{{ c.starts }}</td>
+        <td>{{ c.ends }}</td>
+        <td>{{ c.venue }}</td>
+        <td>{{ c.descripcion }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
